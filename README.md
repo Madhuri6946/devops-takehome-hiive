@@ -5,36 +5,29 @@ This Terraform project deploys:
 - A containerized NGINX service
 - All necessary VPC, IAM, and network setup
 
----
 
-## 🚀 How to Deploy
+## how to deploy
 
-### 1. Clone the repo
-```bash
+## 1. clone the repo
+
 git clone https://github.com/your-username/devops-takehome-hiive.git
 cd devops-takehome-hiive
 
-### 2. Initialize Terraform
-bash
+##  2. Initialize Terraform
 
 terraform init
 
-### 3. Apply
-
-bash
+## 3. Apply
 
 terraform apply
 
-##4. Connect to EKS
-
-bash
+## 4. Connect to EKS
 
 aws eks update-kubeconfig --region us-east-1 --name hiive-eks-cluster
 
 ## 5 Deploy the NGINX service
 
-bash
-
 kubectl apply -f nginx-deployment.yaml
 kubectl get svc nginx-service
 
+## by using external ip we can access it on web browser
